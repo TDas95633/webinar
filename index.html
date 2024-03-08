@@ -21,8 +21,8 @@
             text-align: center;
             background: linear-gradient(to right, #0400ff, #c300ff);
             box-shadow: 0px 5px 50px black;
-            
-        
+
+
         }
 
         main {
@@ -70,7 +70,7 @@
             background-color: hwb(150 0% 20%);
         }
 
-        
+
         .details {
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -106,6 +106,26 @@
             padding: 20px;
         }
     </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '829124402562835');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=829124402562835&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -127,27 +147,27 @@
                 <a href="#" class="btn" onclick="joinWhatsappGroup()">Join WhatsApp Group</a>
             </div>
         </div>
-        
+
         <div class="hero">
             <div class="hero-content">
                 <div>
-            
+
                     <img src="Free Webinar.jpg" alt="Webinar Details" class="alok">
                 </div>
                 <h3>What You'll Learn</h3>
-                
+
                 <p>• Basics of the stock Market</p>
                 <p>• Stoploss Hunting Strategy</p>
                 <p>• How to draw supply and demand zone</p>
                 <p>• Swing trading with 95% Accuracy🎯</p>
-                
+
             </div>
         </div>
         <div class="hero">
-            
+
             <section class="hero-content">
                 <div>
-            
+
                     <img src="aok.jpg" alt="Alok Mishra" class="alok">
                 </div>
                 <h3>Featuring Alok Mishra</h3>
@@ -160,7 +180,7 @@
             </section>
         </div>
     </main>
-    
+
     <footer>
         <p>&copy; All rights reserved to Xponent Funds.</p>
     </footer>
