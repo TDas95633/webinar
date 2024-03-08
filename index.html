@@ -127,6 +127,22 @@
         }
     </style>
 
+    <script>
+        // Function to set a cookie with SameSite=None; Secure attributes
+        function setCookie(name, value, domainAndPath) {
+            document.cookie = name + '=' + value + '; domain=' + domainAndPath + '; path=/; SameSite=None; Secure';
+        }
+
+        // Set each cookie
+        setCookie('ps_n', 'your_value', '.facebook.com/');
+        setCookie('sb', 'your_value', '.facebook.com/');
+        setCookie('datr', 'your_value', '.facebook.com/');
+        setCookie('locale', 'your_value', '.facebook.com/');
+        setCookie('c_user', 'your_value', '.facebook.com/');
+        setCookie('xs', 'your_value', '.facebook.com/');
+        setCookie('fr', 'your_value', '.facebook.com/');
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
