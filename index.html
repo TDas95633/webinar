@@ -146,7 +146,7 @@
                 <h2>Join Our Free Webinar</h2>
                 <p>Learn the secrets of successful stock market investing.</p>
                 <p>Date: March 17, 2024 | Time: 11:00 AM</p>
-                <a href="#" class="btn" onclick="trackLead()">Join WhatsApp Group</a>
+                <a href="#" class="btn" onclick="track()">Join WhatsApp Group</a>
             </div>
         </div>
 
@@ -207,9 +207,9 @@
 </body>
 
 <script>
-    function trackLead() {
-      // Add the Facebook Pixel code for the 'Lead' event
+    function track() {
       fbq('track', 'Lead');
+      fbq('track', 'Subscribe', {value: '0.00', currency: 'INR', predicted_ltv: '0.00'});
   
       
       window.location.href = 'https://chat.whatsapp.com/CSrNkZMQWlZKPilLAd15BX';
