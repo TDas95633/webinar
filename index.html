@@ -146,7 +146,7 @@
                 <h2>Join Our Free Webinar</h2>
                 <p>Learn the secrets of successful stock market investing.</p>
                 <p>Date: March 17, 2024 | Time: 11:00 AM</p>
-                <a href="#" class="btn" onclick="joinWhatsappGroup()">Join WhatsApp Group</a>
+                <a href="#" class="btn" onclick="trackLead()">Join WhatsApp Group</a>
             </div>
         </div>
 
@@ -187,12 +187,12 @@
         <p>&copy; All rights reserved to Xponent Funds.</p>
     </footer>
 
-    <script>
+    <!-- <script>
         function joinWhatsappGroup() {
             const groupLink = "https://chat.whatsapp.com/CSrNkZMQWlZKPilLAd15BX";
             window.open(groupLink, "_blank");
         }
-    </script>
+    </script> -->
 
     <script>
         // Set a cookie on the client side
@@ -205,5 +205,16 @@
     <!-- End Google Tag Manager (noscript) -->
 
 </body>
+
+<script>
+    function trackLead() {
+      // Add the Facebook Pixel code for the 'Lead' event
+      fbq('track', 'Lead');
+  
+      
+      window.location.href = 'https://chat.whatsapp.com/CSrNkZMQWlZKPilLAd15BX';
+    }
+  </script>
+  Adjust the button
 
 </html>
