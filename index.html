@@ -215,6 +215,10 @@
     function track() {
         fbq('track', 'Lead');
         fbq('track', 'Subscribe', { value: '0.00', currency: 'INR', predicted_ltv: '0.00' });
+        gtag('event', 'join_group', {
+            'event_category': 'Button',
+            'event_label': 'Join WhatsApp Group'
+        });
 
 
         window.location.href = 'https://chat.whatsapp.com/EkttJ71jITU61phQgq9Umr';
